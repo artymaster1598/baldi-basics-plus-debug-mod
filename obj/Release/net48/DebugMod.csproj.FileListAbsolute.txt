@@ -1,0 +1,9 @@
+C:\Users\artem\Desktop\bb+ absurd edition\mod\obj\Release\net48\DebugMod.csproj.AssemblyReference.cache
+C:\Users\artem\Desktop\bb+ absurd edition\mod\obj\Release\net48\DebugMod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artem\Desktop\bb+ absurd edition\mod\obj\Release\net48\DebugMod.AssemblyInfoInputs.cache
+C:\Users\artem\Desktop\bb+ absurd edition\mod\obj\Release\net48\DebugMod.AssemblyInfo.cs
+C:\Users\artem\Desktop\bb+ absurd edition\mod\obj\Release\net48\DebugMod.csproj.CoreCompileInputs.cache
+C:\Users\artem\Desktop\bb+ absurd edition\mod\bin\Release\net48\DebugMod.dll
+C:\Users\artem\Desktop\bb+ absurd edition\mod\bin\Release\net48\DebugMod.pdb
+C:\Users\artem\Desktop\bb+ absurd edition\mod\obj\Release\net48\DebugMod.dll
+C:\Users\artem\Desktop\bb+ absurd edition\mod\obj\Release\net48\DebugMod.pdb
