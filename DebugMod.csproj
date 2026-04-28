@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>DebugMod</AssemblyName>
+    <RootNamespace>DebugMod</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <!-- После сборки автоматически копировать DLL в папку плагинов -->
+  <Target Name="CopyToPlugins" AfterTargets="Build">
+    <Copy SourceFiles="$(TargetPath)"
+          DestinationFiles="$(MSBuildProjectDirectory)\..\bb+\BepInEx\plugins\DebugMod.dll"
+          OverwriteReadOnlyFiles="true" />
+    <Message Text="Скопировано: $(TargetPath) → BepInEx\plugins\DebugMod.dll" Importance="high" />
+  </Target>
+
+  <ItemGroup>
+    <!-- BepInEx ядро -->
+    <Reference Include="BepInEx">
+      <HintPath>..\bb+\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>..\bb+\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- MTM101BaldAPI -->
+    <Reference Include="MTM101BaldAPI">
+      <HintPath>..\bb+\BepInEx\plugins\MTM101BaldAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- Unity Engine DLLs -->
+    <Reference Include="UnityEngine">
+      <HintPath>..\bb+\BALDI_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\bb+\BALDI_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\bb+\BALDI_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\bb+\BALDI_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>..\bb+\BALDI_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\bb+\BALDI_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- Игровой код -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\bb+\BALDI_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
