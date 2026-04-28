@@ -1,0 +1,9 @@
+{
+    "modName": "Debug Mode",
+    "author": "ArtyMaster1598",
+    "bversion": "0.14.X",
+    "mversion": "1.0.0",
+    "description": "Debug mode with cheat menu: spawn NPCs/items from any mod, trigger events, control the player.",
+    "gamebananaId": 0,
+    "githubRepo": null
+}
